@@ -1,6 +1,6 @@
 var orm = require("../config/orm.js");
 
-var movie = {
+var burgers = {
     findAll: function(cb) {
         orm.findAll("burgers", function(data){
             cb(data);
