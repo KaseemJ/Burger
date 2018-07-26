@@ -10,6 +10,16 @@ var burgers = {
         orm.create("burgers", cols, vals, function(data){
             cb(data);
         });
+    },
+    update: function(cols, vals, cb) {
+        orm.update("burgers", cols, vals, function(data){
+            cb(data);
+        })
+    },
+    delete: function(id, cb){
+        orm.delete("burgers", id, function(data){
+            cb(data);
+        });
     }
 };
     

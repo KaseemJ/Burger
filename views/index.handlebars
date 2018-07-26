@@ -1,34 +1,33 @@
-<img src="/public/img/cheeseburger.png">
+<img src="/img/cheeseburger.png">
 
-<h1>Burgers</h1>
+<h1 id="h1">Burgers</h1>
 
-<h2>Order Here!</h2>
+<h2 id="order">Order Here!</h2>
 
 {{!-- <ul>
     {{#each cats}} {{#unless sleepy}} {{> cats/cat-block sleep=true}} {{/unless}} {{/each}}
 </ul> --}}
 
-<h2>Cats that are sleepy!</h2>
-
 {{!-- <ul>
     {{#each cats}} {{#if sleepy}} {{> cats/cat-block sleep=false}} {{/if}} {{/each}}
 </ul> --}}
 
-<h2>Add a Burger</h2>
+<h2 id="add">Add a Burger</h2>
 <form class="create-form">
 
     <div class="form-group">
-        <label for="ca">Cat Name:</label>
+        <label for="ca"> Name:</label>
         <input type="text" id="ca" name="name">
     </div>
 
-    <div class="form-group">
-        <label for="sleepy">Sleepy?</label>
+    {{!-- <div class="form-group">
+        <label for="sleepy">Good?</label>
         <br>
-        <input type="radio" name="sleepy" value="1" checked> Sleepy!
+        <input type="radio" name="sleepy" value="1" checked> Bad!
         <br>
-        <input type="radio" name="sleepy" value="0"> Awake
-    </div>
+        <input type="radio" name="sleepy" value="0"> Not Good
+    </div> --}}
 
     <button type="submit">Add Burger</button>
+    <button id="Delete" type="submit">Devour</button>
 </form>
