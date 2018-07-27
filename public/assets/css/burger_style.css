@@ -1,0 +1,18 @@
+img {
+    margin-left: 20%;
+    padding-top: 25px;
+}
+
+body {
+    background-color: beige;
+}
+
+.title {
+    text-align: center;
+    margin-right: 50px;
+    text-decoration: capitalize;
+}
+
+button {
+    margin-right: 50%;
+}

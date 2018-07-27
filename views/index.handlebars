@@ -1,22 +1,24 @@
+<h1 class="title">Favorite Burger</h1>
+
 <img src="/img/cheeseburger.png">
 
-<h1 id="h1">Burgers</h1>
 
 <h2 id="order">Order Here!</h2>
 
-{{!-- <ul>
-    {{#each cats}} {{#unless sleepy}} {{> cats/cat-block sleep=true}} {{/unless}} {{/each}}
-</ul> --}}
+<ul>
+    {{#each burger}} {{#unless Devour}} {{> burger/burger-block Devour=true}} {{/unless}} {{/each}}
+</ul>
 
-{{!-- <ul>
-    {{#each cats}} {{#if sleepy}} {{> cats/cat-block sleep=false}} {{/if}} {{/each}}
-</ul> --}}
+<ul>
+    {{#each burger}} {{#if Devour}} {{> burger/burger-block Devour=false}} {{/if}} {{/each}}
+</ul>
 
-<h2 id="add">Add a Burger</h2>
+{{!-- <h2 id="add">Add a Burger</h2> --}}
 <form class="create-form">
 
+<h1 id="h1">Burgers</h1>
     <div class="form-group">
-        <label for="ca"> Name:</label>
+        <label for="#"> Name:</label>
         <input type="text" id="ca" name="name">
     </div>
 
@@ -27,7 +29,8 @@
         <br>
         <input type="radio" name="sleepy" value="0"> Not Good
     </div> --}}
-
+<div>
     <button type="submit">Add Burger</button>
-    <button id="Delete" type="submit">Devour</button>
+    <button type="submit">Devour</button>
+</div>
 </form>
